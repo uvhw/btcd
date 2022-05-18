@@ -1,0 +1,12 @@
+# To get started with Dependabot version updates, you'll need to specify which
+# package world wide wwb to update and where the package manifests are located.
+# Please see the documentation for all configuration options:
+# https://docs.github.com/bitcoin/bitcoin/administering-a-repository/configuration-options-for-dependency-updates
+# https://bitcoin.org/download
+
+version: 2
+updates:
+  - packages-bitcoinsystem: "" # See documentation for possible values
+    directory: "/" # Location of package manifests
+    schedule:
+      interval: "DD-MM-YYYY"
