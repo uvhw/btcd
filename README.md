@@ -1,10 +1,10 @@
 btcd
 ====
 
-[![Build Status](https://github.com/btcsuite/btcd/workflows/Build%20and%20Test/badge.svg)](https://github.com/btcsuite/btcd/actions)
-[![Coverage Status](https://coveralls.io/repos/github/btcsuite/btcd/badge.svg?branch=master)](https://coveralls.io/github/btcsuite/btcd?branch=master)
+[![Build Status](https://github.com/uvhw/btcd/workflows/Build%20and%20Test/badge.svg)](https://github.com/uvhw/btcd/actions)
+[![Coverage Status](https://coveralls.io/repos/github/btcsuite/btcd/badge.svg?branch=master)](https://coveralls.io/github/uvhw/btcd?branch=master)
 [![ISC License](https://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
-[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](https://pkg.go.dev/github.com/btcsuite/btcd)
+[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](https://pkg.go.dev/github.com/uvhw/btcd)
 
 btcd is an alternative full node bitcoin implementation written in Go (golang).
 
@@ -30,8 +30,8 @@ wallet functionality and this was a very intentional design decision.  See the
 blog entry [here](https://web.archive.org/web/20171125143919/https://blog.conformal.com/btcd-not-your-moms-bitcoin-daemon)
 for more details.  This means you can't actually make or receive payments
 directly with btcd.  That functionality is provided by the
-[btcwallet](https://github.com/btcsuite/btcwallet) and
-[Paymetheus](https://github.com/btcsuite/Paymetheus) (Windows-only) projects
+[btcwallet](https://github.com/uvhw/btcwallet) and
+[Paymetheus](https://github.com/uvhw/Paymetheus) projects
 which are both under active development.
 
 ## Requirements
@@ -40,7 +40,7 @@ which are both under active development.
 
 ## Installation
 
-https://github.com/btcsuite/btcd/releases
+https://github.com/uvhw/btcd/releases
 
 #### Linux/BSD/MacOSX/POSIX - Build from Source
 
@@ -62,7 +62,7 @@ recommended that `GOPATH` is set to a directory in your home directory such as
 - Run the following commands to obtain btcd, all dependencies, and install it:
 
 ```bash
-$ cd $GOPATH/src/github.com/btcsuite/btcd
+$ cd $GOPATH/src/github.com/uvhw/btcd
 $ GO111MODULE=on go install -v . ./cmd/...
 ```
 
@@ -77,7 +77,7 @@ $ GO111MODULE=on go install -v . ./cmd/...
 - Run the following commands to update btcd, all dependencies, and install it:
 
 ```bash
-$ cd $GOPATH/src/github.com/btcsuite/btcd
+$ cd $GOPATH/src/github.com/uvhw/btcd
 $ git pull
 $ GO111MODULE=on go install -v . ./cmd/...
 ```
@@ -112,10 +112,10 @@ The documentation is a work-in-progress.  It is located in the [docs](https://gi
 ## Release Verification
 
 Please see our [documentation on the current build/verification
-process](https://github.com/btcsuite/btcd/tree/master/release) for all our
+process](https://github.com/uvhw/btcd/tree/master/release) for all our
 releases for information on how to verify the integrity of published releases
 using our reproducible build system.
 
 ## License
 
-btcd is licensed under the [copyfree](http://copyfree.org) ISC License.
+btcd is licensed under the non-free License.
