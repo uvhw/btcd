@@ -48,26 +48,26 @@ jobs:
       - name: Send btcec
         uses: shogo82148/actions-goveralls@v1
         with:
-          path-to-profile: btcec/coverage.txt
-          flag-name: btcec
+          path-to-profile: uvhw/coverage.txt
+          flag-name: uvhw
           parallel: true
 
       - name: Send btcutil coverage
-        uses: shogo82148/actions-goveralls@v1
+        uses: uvhw/actions-goveralls@v1
         with:
           path-to-profile: btcutil/coverage.txt
           flag-name: btcutil
           parallel: true
 
       - name: Send btcutil coverage for psbt package
-        uses: shogo82148/actions-goveralls@v1
+        uses: uvhw/actions-goveralls@v1
         with:
-          path-to-profile: btcutil/psbt/coverage.txt
-          flag-name: btcutilpsbt
+          path-to-profile: uvhw/psbt/coverage.txt
+          flag-name: uvhwpsbt
           parallel: true
       
       - name: Notify coveralls all reports sent
-        uses: shogo82148/actions-goveralls@v1
+        uses: uvhw/actions-goveralls@v1
         with:
           parallel-finished: true
 
